@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "livepeer-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/livepeer/livepeer-swift",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0b4eb4804988f104d49bb450c38229e3c88674ea"
+      }
+    }
+  ],
+  "version" : 2
+}

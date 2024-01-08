@@ -14,6 +14,7 @@
 		1A359C242B4C90E300EBFC5B /* demoappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A359C232B4C90E300EBFC5B /* demoappTests.swift */; };
 		1A359C2E2B4C90E300EBFC5B /* demoappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A359C2D2B4C90E300EBFC5B /* demoappUITests.swift */; };
 		1A359C302B4C90E300EBFC5B /* demoappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A359C2F2B4C90E300EBFC5B /* demoappUITestsLaunchTests.swift */; };
+		1A359C3E2B4C911900EBFC5B /* Livepeer in Frameworks */ = {isa = PBXBuildFile; productRef = 1A359C3D2B4C911900EBFC5B /* Livepeer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A359C3E2B4C911900EBFC5B /* Livepeer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +147,9 @@
 			dependencies = (
 			);
 			name = demoapp;
+			packageProductDependencies = (
+				1A359C3D2B4C911900EBFC5B /* Livepeer */,
+			);
 			productName = demoapp;
 			productReference = 1A359C0E2B4C90E200EBFC5B /* demoapp.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 1A359C052B4C90E100EBFC5B;
+			packageReferences = (
+				1A359C3C2B4C911900EBFC5B /* XCRemoteSwiftPackageReference "livepeer-swift" */,
+			);
 			productRefGroup = 1A359C0F2B4C90E200EBFC5B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -609,6 +617,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A359C3C2B4C911900EBFC5B /* XCRemoteSwiftPackageReference "livepeer-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livepeer/livepeer-swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A359C3D2B4C911900EBFC5B /* Livepeer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A359C3C2B4C911900EBFC5B /* XCRemoteSwiftPackageReference "livepeer-swift" */;
+			productName = Livepeer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A359C062B4C90E100EBFC5B /* Project object */;
 }
